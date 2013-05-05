@@ -86,7 +86,7 @@ static struct dvfs_rail tegra2_dvfs_rail_vdd_cpu = {
 #ifndef CONFIG_TEGRA_ENABLE_OC
 	.nominal_millivolts = 1125,
 #else
-	.nominal_millivolts = 1400,
+	.nominal_millivolts = 1250,
 #endif
 };
 
@@ -101,7 +101,7 @@ static struct dvfs_rail tegra2_dvfs_rail_vdd_core = {
 #ifndef CONFIG_TEGRA_ENABLE_OC
 	.nominal_millivolts = 1225,
 #else
-	.nominal_millivolts = 1450,
+	.nominal_millivolts = 1300,
 #endif
 	.step = 150, /* step vdd_core by 150 mV to allow vdd_aon to follow */
 };
@@ -117,7 +117,7 @@ static struct dvfs_rail tegra2_dvfs_rail_vdd_aon = {
 #ifndef CONFIG_TEGRA_ENABLE_OC
 	.nominal_millivolts = 1225,
 #else
-	.nominal_millivolts = 1450,
+	.nominal_millivolts = 1300,
 #endif
 #ifndef CONFIG_TEGRA_CORE_DVFS
 	.disabled = true,
